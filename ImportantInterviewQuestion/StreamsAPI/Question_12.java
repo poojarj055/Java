@@ -12,8 +12,9 @@ public class Main {
        
     }
        private static boolean isPalindrome(String s){
-         String reversed=new StringBuilder(s).reverse().toString();
-         return s.equals(reversed);
+         String lowerCase = s.toLowerCase();
+         String reversed = new StringBuilder(lowerCase).reverse().toString();
+         return lowerCase.equals(reversed);
        }
     
 }
