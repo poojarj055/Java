@@ -16,7 +16,6 @@ public class Main {
                 map(emp->emp.salary).
                 sorted((p1, p2)->p2 -p1).
                 distinct().
-                //limit(1).
                  skip(1).
                 findFirst().
                 ifPresent(sal->System.out.println("Second Highest Salary : "+sal));
